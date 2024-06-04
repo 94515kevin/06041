@@ -62,8 +62,8 @@ function drawSkeleton() {
   for (let i = 0; i < poses.length; i++) {
      pose = poses[i];
     
-    partA = pose.keypoints[1]; //右耳
-    partB = pose.keypoints[2]; //左耳
+    partA = pose.keypoints[1]; //右眼
+    partB = pose.keypoints[2]; //左眼
     
     if (partA.score > 0.1 ) {
       image(earImg,partA.x, partA.y-25, 50, 50);
